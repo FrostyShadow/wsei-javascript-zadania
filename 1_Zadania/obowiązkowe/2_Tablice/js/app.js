@@ -77,3 +77,24 @@ const sortArray = (arr) => {
 }
 
 sortArray([145,11,3,64,4,6,10])
+
+// Zadanie 7
+const addArrays = (arrA, arrB) => {
+    let newArr = [];
+    if(arrA.length > arrB.length){
+        for(let i = 0; i < arrA.length; i++){
+            if(i >= arrB.length) newArr.push(arrA[i]);
+            else newArr.push(arrA[i] + arrB[i]);
+        }
+    } else {
+        for(let i = 0; i < arrB.length; i++){
+            if(i >= arrA.length) newArr.push(arrB[i]);
+            else newArr.push(arrA[i] + arrB[i]);
+        }
+    }
+    return newArr;
+}
+
+addArrays([4,0,1,3,4], [1,9,6,7,8,17]);
+addArrays([8,3,22], [1,3,2]);
+addArrays([2,3,1,5,3,5], [3,1,76,1]);
