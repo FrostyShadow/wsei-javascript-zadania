@@ -31,3 +31,13 @@ var animals = [
     }
 
 ]
+
+for(var i = 0; i < animals.length; i++){
+    console.log(`Animal ${i}:\n`)
+    for (const key in animals[i]) {
+        if (animals[i].hasOwnProperty(key)) {
+            const element = animals[i][key];
+            console.log(`${key}: ${element}`)
+        }
+    }
+}
