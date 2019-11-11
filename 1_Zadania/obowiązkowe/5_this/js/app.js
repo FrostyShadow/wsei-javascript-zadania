@@ -27,5 +27,23 @@ car.printCheckUps = function(){
     return this.checkUps
 }
 
-// Zadanie 2
+// Zadanie 3
 
+stairs = {
+    step: 0,
+    up: function(){
+        this.step++;
+    },
+    down: function(){
+        this.step--;
+    },
+    printStep: function(){
+        console.log(`You're currently on step ${this.step}`);
+    }
+}
+
+stairs.up();
+stairs.up();
+stairs.up();
+stairs.down(); 
+stairs.printStep()
