@@ -5,21 +5,21 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+// Deklaracja funkcji sortArray()
 function sortArray() {
 
-    //Twoj komentarz ...
+    // Deklaracja array "points"
     var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
+    // Metoda sort służąca do sortowania zawartości array
     points.sort(function (a, b) {
-        //Twoj komentarz ...
+        // Różnica a - b powoduje, że porównanie elementów tablicy działa na liczbach, a nie na stringach
         return a - b;
     });
 
-    //Twoj komentarz ...
+    // Return tablicy w formie posortowanej od najmniejszych do największych
     return points;
 }
 
-//Twoj komentarz ...
+// Wywowałeni funkcji sortArray()
 sortArray();

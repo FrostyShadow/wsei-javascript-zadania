@@ -12,3 +12,14 @@ callOtherFunction(function (a, b) {
     console.log("Wynik", a + b)
 })
 
+callOtherFunction((a,b) => {
+    console.log(`First number: ${a}`)
+    console.log(`Second number: ${b}`)
+    console.log(`Result: ${a^b}`)
+})
+
+callOtherFunction((a,b) => {
+    console.log(`First number: ${a}`)
+    console.log(`Second number: ${b}`)
+    console.log(`Result: ${Math.sqrt(a) + Math.sqrt(b)}`)
+})

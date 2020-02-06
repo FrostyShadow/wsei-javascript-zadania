@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+// Deklaracja funkcji jeden()
 function jeden() {
 
-    //Twoj komentarz ...
+    // Deklaracja zmiennej lokalnej "zmienna1", jest ona dostępna wewnątrz całej funkcji jeden() 
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    // Deklaracja funkcji dwa
     function dwa() {
 
-        //Twoj komentarz ...
+        // Wyświetlenie wartości zmiennej "zmienna1", w konsoli wypisana zostanie wartość zmiennej ponieważ jest ona dostępna z poziomu funkcji dwa()
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        // Deklaracja zmiennej lokalnej "zmienna2" dostępnej wewnątrz funkcji dwa()
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    // Wywołanie funkcji dwa()
     dwa();
 
-    //Twoj komentarz ...
+    // Wyświetlenie wartości zmiennej "zmienna2", w konsoli pojawi się błąd gdyż w kontekście funkcji jeden() zmienna "zmienna2" nie została zadeklarowana
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+// Wywołanie funkcji jeden()
 jeden()
